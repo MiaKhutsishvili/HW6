@@ -16,6 +16,11 @@ int main()
 {
     double a, b, c;
     printf ("Enter a: "); scanf ("%lf", &a);
+    while (!a)
+    {
+        printf ("a cannot be 0. Enter a: ");
+        scanf ("%lf", &a);
+    }
     printf ("Enter b: "); scanf ("%lf", &b);
     printf ("Enter c: "); scanf ("%lf", &c);
     if (solver(a, b, c).delta < 0)
