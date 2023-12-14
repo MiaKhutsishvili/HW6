@@ -35,9 +35,9 @@ int main()
 struct eq solver (double a, double b, double c)
 {
     struct eq toSolve;
-    toSolve.delta = (double)(b * b) - (double)(4 * a * c);
+    toSolve.delta = (b * b) - (4 * a * c);
     if (toSolve.delta >= 0)
-        toSolve.root1 = (double)(sqrt (toSolve.delta) - b) / (double)(2 * a),
-        toSolve.root2 = (double)(-(sqrt (toSolve.delta)) - b) / (double)(2 * a);
+        toSolve.root1 = (sqrt (toSolve.delta) - b) / (2 * a),
+        toSolve.root2 = (-(sqrt (toSolve.delta)) - b) / (2 * a);
     return toSolve;
 }
