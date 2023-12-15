@@ -24,7 +24,7 @@ int main()
     printf ("Enter b: "); scanf ("%lf", &b);
     printf ("Enter c: "); scanf ("%lf", &c);
     if (solver(a, b, c).delta < 0)
-        printf ("No real roots!\n");
+        printf ("This equation has no real roots!\n");
     else if (!solver(a, b, c).delta)
         printf ("1 root: %lf\n", solver(a, b, c).root1);
     else
