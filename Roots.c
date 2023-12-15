@@ -40,7 +40,7 @@ int main()
 int solver (struct eq * ptr)
 {
     double a = ptr->a, b = ptr->b, c = ptr->c;
-    if (!ptr->a)
+    if (!a)
     {
         ptr->roots[0] = -c / b;
         return 1;
